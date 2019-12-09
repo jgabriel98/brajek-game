@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class MovementControler : MonoBehaviour
 {
-
-    public Animator animator;
+    private Animator animator;
     public float speed;
+
+    public bool isLocked = false;
     //public CharacterController controller;
 
     public Vector3 movement;
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+        if (isLocked)    //TODO: será que aqui preciso setar "X_axis", "Y_axis" e "Magnitude" para 0?
+            return;
+        
         movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        
+        //para andar sempre na mesma velocidade, independente da direção (ex.: não andar super rapido na diagonal)
         movement.Normalize();
 
         animator.SetFloat("X_axis", movement.x);
