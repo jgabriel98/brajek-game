@@ -10,8 +10,13 @@ public class combatController : MonoBehaviour
     private Camera camera;
     private Animator animator;
     public GameObject primaryAttackPrefab;
-    public GameObject primaryAttack_obj;
+    public GameObject secondaryAttackPrefab;
+    private GameObject primaryAttack_obj;
+    private GameObject spriteRenderer;
+    private GameObject attackCollider;
 
+    public float attackDuration = 0.2f;    //duração em segundos
+    public float projectileSpeed = 15f;
     private MovementControler  movementController;
 
     private static readonly Vector3[] CartesianPoints2D = {
@@ -21,10 +26,12 @@ public class combatController : MonoBehaviour
 
 void Start() {
     camera = Camera.current ? Camera.current : Camera.main;
-    primaryAttack_obj = Instantiate(primaryAttackPrefab, gameObject.transform);
-    primaryAttack_obj.SetActive(false);
     movementController = gameObject.GetComponent<MovementControler>();
     animator = GetComponent<Animator>();
+    primaryAttack_obj = Instantiate(primaryAttackPrefab, gameObject.transform);
+    primaryAttack_obj.SetActive(false);
+    spriteRenderer = primaryAttack_obj.transform.Find("AttackRenderer").gameObject;
+    attackCollider = primaryAttack_obj.transform.Find("AttackCollider").gameObject;
 }
 
     // Update is called once per frame
@@ -56,24 +63,29 @@ void Start() {
             update: feito! - deixando comentário para entender melhor o que está acontecendo
             */
 
-            Transform spriteRenderer = primaryAttack_obj.transform.Find("AttackRenderer");
-            Transform attackCollider = primaryAttack_obj.transform.Find("AttackCollider");
-            
-            spriteRenderer.localPosition = attackSpritePosition;
-            spriteRenderer.rotation = Quaternion.FromToRotation(Vector3.up, attackSpritePosition);
-            attackCollider.localPosition = attackHitBoxDirection;
-            attackCollider.rotation = Quaternion.FromToRotation(Vector3.up, attackHitBoxDirection);
+            spriteRenderer.transform.localPosition = attackSpritePosition;
+            spriteRenderer.transform.rotation = Quaternion.FromToRotation(Vector3.up, attackSpritePosition);
+            attackCollider.transform.localPosition = attackHitBoxDirection;
+            attackCollider.transform.rotation = Quaternion.FromToRotation(Vector3.up, attackHitBoxDirection);
 
             primaryAttack_obj.SetActive(true);
             movementController.isLocked = true;
+            
+            //faz pequeno deslize em direção ao ataque
+            movementController.CurrentSpeed = 0.25f/attackDuration;
+            movementController.direction = attackHitBoxDirection;
             //animator.PlayTheAtackAnimationHere
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(attackDuration);
+            movementController.CurrentSpeed = movementController.defaultSpeed;
+            
             primaryAttack_obj.SetActive(false);
             movementController.isLocked = false;
         }
     }
     void attackSecondary(Vector3 direction) {
         Debug.Log("ataque secundário na direção "+ direction.ToString());
+        GameObject tiro = Instantiate(secondaryAttackPrefab, transform.position, Quaternion.identity);
+        tiro.GetComponent<Rigidbody2D>().velocity = direction.normalized * projectileSpeed;
     }
 
     Vector3 getClosestPointFrom(Vector3 pointFrom, Vector3[] pointsToLook) {
