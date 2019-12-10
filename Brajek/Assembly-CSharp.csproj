@@ -58,6 +58,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\combatController.cs" />
      <Compile Include="Assets\Scripts\MovementControler.cs" />
+     <Compile Include="Assets\Scripts\Projectile.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>G:/Storage/Repos/GitHub/brajek-game/Brajek/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

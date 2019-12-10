@@ -10,11 +10,13 @@ public class combatController : MonoBehaviour
     private Camera camera;
     private Animator animator;
     public GameObject primaryAttackPrefab;
-    public GameObject primaryAttack_obj;
+    public GameObject secondaryAttackPrefab;
+    private GameObject primaryAttack_obj;
     private GameObject spriteRenderer;
     private GameObject attackCollider;
 
-    private float attackDuration = 0.4f;    //duração em segundos
+    public float attackDuration = 0.2f;    //duração em segundos
+    public float projectileSpeed = 15f;
     private MovementControler  movementController;
 
     private static readonly Vector3[] CartesianPoints2D = {
@@ -69,6 +71,9 @@ void Start() {
             primaryAttack_obj.SetActive(true);
             movementController.isLocked = true;
             
+            //faz pequeno deslize em direção ao ataque
+            movementController.CurrentSpeed = 0.25f/attackDuration;
+            movementController.direction = attackHitBoxDirection;
             //animator.PlayTheAtackAnimationHere
             yield return new WaitForSeconds(attackDuration);
             movementController.CurrentSpeed = movementController.defaultSpeed;
@@ -79,6 +84,8 @@ void Start() {
     }
     void attackSecondary(Vector3 direction) {
         Debug.Log("ataque secundário na direção "+ direction.ToString());
+        GameObject tiro = Instantiate(secondaryAttackPrefab, transform.position, Quaternion.identity);
+        tiro.GetComponent<Rigidbody2D>().velocity = direction.normalized * projectileSpeed;
     }
 
     Vector3 getClosestPointFrom(Vector3 pointFrom, Vector3[] pointsToLook) {

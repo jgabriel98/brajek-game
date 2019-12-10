@@ -17,7 +17,7 @@ public class MovementControler : MonoBehaviour
     public bool isLocked;
     //public CharacterController controller;
 
-    public Vector3 movement;
+    public Vector3 direction;
     // Start is called before the first frame update
     void Start() {
         animator = GetComponent<Animator>();
@@ -29,16 +29,19 @@ public class MovementControler : MonoBehaviour
     void Update() {
         //TODO: será que aqui preciso setar "X_axis", "Y_axis" e "Magnitude" para 0?
         if (!isLocked) {
-            movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         
             //para andar sempre na mesma velocidade, independente da direção (ex.: não andar super rapido na diagonal)
-            movement.Normalize();
+            direction.Normalize();
     
-            animator.SetFloat("X_axis", movement.x);
-            animator.SetFloat("Y_axis", movement.y);
-            animator.SetFloat("Magnitude", movement.magnitude);
+            animator.SetFloat("X_axis", direction.x);
+            animator.SetFloat("Y_axis", direction.y);
+            animator.SetFloat("Magnitude", direction.magnitude);
             
-            Move(movement);
+            Move(direction);
+        }
+        else {
+            Move(direction);
         }
     }
 
