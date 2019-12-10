@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class EnemyOneMovement : MonoBehaviour
 {
+    // configurar esses valores dentro da Unity
     public float speed = 2f;
     public float range = 5f;
+
+    // deve ser setado para o objeto do player na Unity
     public GameObject target;
 
     // Start is called before the first frame update
