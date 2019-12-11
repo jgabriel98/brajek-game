@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef54e13c6e921a4ca90b7ed85d3d445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 4
+  defaultSpeed: 2
   isLocked: 0
   direction: {x: 0, y: 0, z: 0}
 --- !u!114 &681724624
@@ -255,8 +255,9 @@ MonoBehaviour:
     type: 3}
   secondaryAttackPrefab: {fileID: 8196956891601137967, guid: 6fd5c128e3936434b956875811a5b3ba,
     type: 3}
+  attackDelay: 0.11
   attackDuration: 0.2
-  projectileSpeed: 15
+  projectileSpeed: 7.5
 --- !u!1 &843366599
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843366599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 681724621}
@@ -544,6 +545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03caf7ac82a66b1bab815d9376401c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  range: 5
+  speed: 1
+  range: 3
   target: {fileID: 681724619}

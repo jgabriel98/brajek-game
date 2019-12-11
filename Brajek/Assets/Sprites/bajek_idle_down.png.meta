@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -145,26 +145,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 8}
-        - {x: -8, y: -11}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 8, y: -10}
-        - {x: 8, y: 8}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 385820837d79d6aff8f2594a82454a15
+      spriteID: 7c14c007061a0cd0281e3d1031e2d39e
       internalID: -421389885001535618
       vertices: []
       indices: 
@@ -174,33 +164,18 @@ TextureImporter:
       name: bajek_idle_down_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: -9}
-        - {x: 8, y: 7}
-        - {x: 6, y: 9}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -4, y: 15}
-        - {x: -8, y: 7}
-        - {x: -8, y: -6}
-        - {x: -9, y: -8}
-        - {x: -7, y: -13}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 9, y: -11}
-        - {x: 9, y: -10}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 20de6ad7e4e13ebeaafb506e652b3759
+      spriteID: a884d2bfe2d3ee3f0ab09ad60fdf4ed6
       internalID: 1770800296665877106
       vertices: []
       indices: 
@@ -210,28 +185,18 @@ TextureImporter:
       name: bajek_idle_down_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 8}
-        - {x: -8, y: -11}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 8, y: -10}
-        - {x: 8, y: 8}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 70397ffd9d7f51c2e95e627eeaa1fcfe
+      spriteID: ed18c1cfe34d99e76862a4b52eb5b011
       internalID: -8618687724095069862
       vertices: []
       indices: 
@@ -241,33 +206,18 @@ TextureImporter:
       name: bajek_idle_down_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: -9}
-        - {x: 8, y: 7}
-        - {x: 6, y: 9}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -4, y: 15}
-        - {x: -8, y: 7}
-        - {x: -8, y: -6}
-        - {x: -9, y: -8}
-        - {x: -7, y: -13}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 9, y: -11}
-        - {x: 9, y: -10}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: bf3c3cc85864bef03bc553fd15738b84
+      spriteID: c6a310906572989b7bc59f3b1a5d668f
       internalID: 6911540602337122057
       vertices: []
       indices: 
@@ -277,28 +227,18 @@ TextureImporter:
       name: bajek_idle_down_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 256
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 8}
-        - {x: -8, y: -11}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 8, y: -10}
-        - {x: 8, y: 8}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 6a9f6fad3135c7f8b805fdafef2f4537
+      spriteID: b9244b8fc4977f8018684917f8e919fb
       internalID: -4315142338028067507
       vertices: []
       indices: 
@@ -308,33 +248,18 @@ TextureImporter:
       name: bajek_idle_down_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 320
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: -9}
-        - {x: 8, y: 7}
-        - {x: 6, y: 9}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -4, y: 15}
-        - {x: -8, y: 7}
-        - {x: -8, y: -6}
-        - {x: -9, y: -8}
-        - {x: -7, y: -13}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 9, y: -11}
-        - {x: 9, y: -10}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: bfe020e13e22b83719976d37756b1c7a
+      spriteID: c73bb65e48b85e6579da2938c0e34c0b
       internalID: -5080334274660263433
       vertices: []
       indices: 
@@ -344,28 +269,18 @@ TextureImporter:
       name: bajek_idle_down_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 384
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 8}
-        - {x: -8, y: -11}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 8, y: -10}
-        - {x: 8, y: 8}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 2810ab9ac62bc038dab44d34e0e3d09e
+      spriteID: b3b8c8805089f427e8973a4688f1605f
       internalID: 2849347894508467534
       vertices: []
       indices: 
@@ -375,33 +290,18 @@ TextureImporter:
       name: bajek_idle_down_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 448
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: -9}
-        - {x: 8, y: 7}
-        - {x: 6, y: 9}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -4, y: 15}
-        - {x: -8, y: 7}
-        - {x: -8, y: -6}
-        - {x: -9, y: -8}
-        - {x: -7, y: -13}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 9, y: -11}
-        - {x: 9, y: -10}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: cb482c09a1bdbb6738b77d7997adaa71
+      spriteID: 0478fb992cbae3792a9d828e0b1671d2
       internalID: -8521278163947603320
       vertices: []
       indices: 
@@ -411,28 +311,18 @@ TextureImporter:
       name: bajek_idle_down_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 8}
-        - {x: -8, y: -11}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 8, y: -10}
-        - {x: 8, y: 8}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 45b59c39c31220b3cbc472713752f165
+      spriteID: 5d667f842b4b5fa278b98b4818074321
       internalID: -255446458469155880
       vertices: []
       indices: 
@@ -442,33 +332,18 @@ TextureImporter:
       name: bajek_idle_down_9
       rect:
         serializedVersion: 2
-        x: 288
+        x: 576
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: -9}
-        - {x: 8, y: 7}
-        - {x: 6, y: 9}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -4, y: 15}
-        - {x: -8, y: 7}
-        - {x: -8, y: -6}
-        - {x: -9, y: -8}
-        - {x: -7, y: -13}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-        - {x: 9, y: -11}
-        - {x: 9, y: -10}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: f17c5df881c14f5a6b4e9988b2c72072
+      spriteID: cdd7601ea6511d66498d3f6237412f79
       internalID: -1951231288194959017
       vertices: []
       indices: 
@@ -478,30 +353,18 @@ TextureImporter:
       name: bajek_idle_down_10
       rect:
         serializedVersion: 2
-        x: 320
+        x: 640
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: -10}
-        - {x: 8, y: 8}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 8}
-        - {x: -8, y: -6}
-        - {x: -9, y: -8}
-        - {x: -7, y: -13}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: beaaec606f26fd30fa8862444a741f07
+      spriteID: cc378c54a544c5bad9815d31897c3841
       internalID: 7448144571923521164
       vertices: []
       indices: 
@@ -511,31 +374,18 @@ TextureImporter:
       name: bajek_idle_down_11
       rect:
         serializedVersion: 2
-        x: 352
+        x: 704
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 6, y: 9}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 7}
-        - {x: -8, y: -7}
-        - {x: -9, y: -9}
-        - {x: -6, y: -13}
-        - {x: -7, y: -16}
-        - {x: 5, y: -16}
-        - {x: 8, y: -10}
-        - {x: 8, y: 7}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 3a22b1304e83b2bfe90bc3b8afa0a017
+      spriteID: 7d083d2134864eb52968a40e4422ffae
       internalID: -6238623909194362991
       vertices: []
       indices: 
@@ -545,30 +395,18 @@ TextureImporter:
       name: bajek_idle_down_12
       rect:
         serializedVersion: 2
-        x: 384
+        x: 768
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: -10}
-        - {x: 8, y: 8}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 8}
-        - {x: -8, y: -6}
-        - {x: -9, y: -8}
-        - {x: -7, y: -13}
-        - {x: -6, y: -16}
-        - {x: 5, y: -16}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 2403edba5c1d09909ae20476125ac364
+      spriteID: 4f2d4a463580a7c189162b8a84b9c4bb
       internalID: 5361868370834231447
       vertices: []
       indices: 
@@ -578,31 +416,18 @@ TextureImporter:
       name: bajek_idle_down_13
       rect:
         serializedVersion: 2
-        x: 416
+        x: 832
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 6, y: 9}
-        - {x: 6, y: 14}
-        - {x: 4, y: 16}
-        - {x: -3, y: 16}
-        - {x: -5, y: 14}
-        - {x: -8, y: 7}
-        - {x: -8, y: -7}
-        - {x: -9, y: -9}
-        - {x: -6, y: -13}
-        - {x: -7, y: -16}
-        - {x: 5, y: -16}
-        - {x: 8, y: -10}
-        - {x: 8, y: 7}
-      tessellationDetail: 0.75
+      physicsShape: []
+      tessellationDetail: 0
       bones: []
-      spriteID: 481da3c1f353ba395867af5f6f0dc465
+      spriteID: 7adcd39f34a79c53387684e091b2101d
       internalID: 6822633726251233690
       vertices: []
       indices: 

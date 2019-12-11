@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,8 +127,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,7 +136,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 267fd6873d8c9fc4db9c7ebabf3c5bd2
+      spriteID: 870aaf10085aede5485fdf1eaab19d4a
       internalID: -1673408569496952239
       vertices: []
       indices: 
@@ -146,10 +146,10 @@ TextureImporter:
       name: bajek_walk_down_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,7 +157,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c7f47a350f1948b097827d2e533b5ea
+      spriteID: 92694f0721fcdabd6b052f5d9650a99b
       internalID: -2430097668964695178
       vertices: []
       indices: 
@@ -167,10 +167,10 @@ TextureImporter:
       name: bajek_walk_down_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,7 +178,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeb5c0339bbdd43c78e8eba7d03880d0
+      spriteID: da98b0d614e0b68da968f5f95596786f
       internalID: -1791851018507045782
       vertices: []
       indices: 
@@ -188,10 +188,10 @@ TextureImporter:
       name: bajek_walk_down_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,7 +199,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4a5a8c5672d7b1f1b2b1ff792648a63
+      spriteID: 9c0d0f7c077d9674192e164294ae169e
       internalID: -7604449622239432794
       vertices: []
       indices: 
@@ -209,10 +209,10 @@ TextureImporter:
       name: bajek_walk_down_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 256
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,7 +220,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38a2ef8388b659771bf370586f8bae1f
+      spriteID: 4391658a9198d81a39485da82a4000c6
       internalID: -2569645933202782307
       vertices: []
       indices: 
@@ -230,10 +230,10 @@ TextureImporter:
       name: bajek_walk_down_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 320
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,7 +241,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7e398838cbdc94ed9c8cd85872a55cf
+      spriteID: faf27847765af89b99b5c5f94097513f
       internalID: 230374372079124673
       vertices: []
       indices: 
@@ -251,10 +251,10 @@ TextureImporter:
       name: bajek_walk_down_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 384
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,7 +262,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6692e5d8e91ee1f848c2a133dfe0d026
+      spriteID: e9ac2aeb0b4e2ca72aef937089a7cbf5
       internalID: 1220184399314550976
       vertices: []
       indices: 
@@ -272,10 +272,10 @@ TextureImporter:
       name: bajek_walk_down_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 448
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,7 +283,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ce046e108e0e0669807294804cf2ee8
+      spriteID: bcdb2e7f3e0286a92a518625d0dccbee
       internalID: -3081191909191852818
       vertices: []
       indices: 

@@ -15,6 +15,7 @@ public class combatController : MonoBehaviour
     private GameObject spriteRenderer;
     private GameObject attackCollider;
 
+    public float attackDelay = 0.09f;    //duração em segundos
     public float attackDuration = 0.2f;    //duração em segundos
     public float projectileSpeed = 15f;
     private MovementControler  movementController;
@@ -68,13 +69,19 @@ void Start() {
             attackCollider.transform.localPosition = attackHitBoxDirection;
             attackCollider.transform.rotation = Quaternion.FromToRotation(Vector3.up, attackHitBoxDirection);
 
-            primaryAttack_obj.SetActive(true);
             movementController.isLocked = true;
+            movementController.direction /= 5; 
             
-            //faz pequeno deslize em direção ao ataque
-            movementController.CurrentSpeed = 0.25f/attackDuration;
-            movementController.direction = attackHitBoxDirection;
             //animator.PlayTheAtackAnimationHere
+            animator.SetFloat("X_mouseAxis", attackHitBoxDirection.x);
+            animator.SetFloat("Y_mouseAxis", attackHitBoxDirection.y);
+            animator.SetTrigger("attack");
+            yield return new WaitForSeconds(attackDelay*2);
+            //faz pequeno deslize em direção ao ataque
+            movementController.CurrentSpeed = 0.175f/attackDuration;
+            movementController.direction = attackHitBoxDirection;
+            primaryAttack_obj.SetActive(true);
+            
             yield return new WaitForSeconds(attackDuration);
             movementController.CurrentSpeed = movementController.defaultSpeed;
             

@@ -1,43 +1,31 @@
 fileFormatVersion: 2
-guid: 1dffb8fb1d304e2558a96068aeee3f55
+guid: 9d6a9483b479d95589e6ee19a259c025
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 590877080285183547
-    second: bajek_right_0
+      213: -7103293150825141024
+    second: bajek_leftAttack_firstStep_0
   - first:
-      213: -2662102912244104809
-    second: bajek_right_1
+      213: -4917424957694460093
+    second: bajek_leftAttack_firstStep_1
   - first:
-      213: 2735397004647785827
-    second: bajek_right_2
+      213: -5629086477494501571
+    second: bajek_leftAttack_firstStep_2
   - first:
-      213: 8335532332262588508
-    second: bajek_right_3
+      213: 3077757846156679003
+    second: bajek_leftAttack_firstStep_3
   - first:
-      213: -6889487511983105200
-    second: bajek_right_4
+      213: 5463586854955503278
+    second: bajek_leftAttack_firstStep_4
   - first:
-      213: 996223869409275091
-    second: bajek_right_5
+      213: 7897583993437005500
+    second: bajek_leftAttack_firstStep_5
   - first:
-      213: -75133331964248377
-    second: bajek_right_6
+      213: 3998129418936604126
+    second: bajek_leftAttack_firstStep_6
   - first:
-      213: -2973041409649255745
-    second: bajek_right_7
-  - first:
-      213: 6568048007243480551
-    second: bajek_right_8
-  - first:
-      213: -4956950873965411921
-    second: bajek_right_9
-  - first:
-      213: -8711956192205773519
-    second: bajek_right_10
-  - first:
-      213: 5219905782751858422
-    second: bajek_right_11
+      213: 5008260189526368824
+    second: bajek_leftAttack_firstStep_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -77,7 +65,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -134,253 +122,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bajek_right_0
+      name: bajek_leftAttack_firstStep_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5915084, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b744a02d51f936748f88f8a5839d9bc
-      internalID: 590877080285183547
+      spriteID: bb203d98f570926699564469d6f1e4ea
+      internalID: -7103293150825141024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bajek_right_1
+      name: bajek_leftAttack_firstStep_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5915084, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9cc609ceff7c00749c52ec16b5e4cb3
-      internalID: -2662102912244104809
+      spriteID: 5c6199fb69de4a1969a3974230cf21af
+      internalID: -4917424957694460093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bajek_right_2
+      name: bajek_leftAttack_firstStep_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5915084, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84c9954c2b8f9b7ddac15b9d87bb045c
-      internalID: 2735397004647785827
+      spriteID: ab2fa4d88d6743b32a65476db8a5bebb
+      internalID: -5629086477494501571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bajek_right_3
+      name: bajek_leftAttack_firstStep_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5915084, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 444c3fdc029c795db87f6b4aed30de46
-      internalID: 8335532332262588508
+      spriteID: e60bee16d3884f9f7a0114d86cc3f9c6
+      internalID: 3077757846156679003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bajek_right_4
+      name: bajek_leftAttack_firstStep_4
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5915084, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ea3f6737eb2adc589385cf4d4a8a334
-      internalID: -6889487511983105200
+      spriteID: bfc96e87ab64e05249cad40a71dc1a53
+      internalID: 5463586854955503278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bajek_right_5
+      name: bajek_leftAttack_firstStep_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5915084, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be81ccd06af84c085a50e73e5a391847
-      internalID: 996223869409275091
+      spriteID: c1e8ce97d0c208e258e0663eb0ea498d
+      internalID: 7897583993437005500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bajek_right_6
+      name: bajek_leftAttack_firstStep_6
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5915084, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e96d7e91bb3dafdbc8cbcbea58e08d6d
-      internalID: -75133331964248377
+      spriteID: b674515c08bfadae8b6df193623c6844
+      internalID: 3998129418936604126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bajek_right_7
+      name: bajek_leftAttack_firstStep_7
       rect:
         serializedVersion: 2
         x: 448
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5915084, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e16ca1f36310aa97a285b1d2321f07c
-      internalID: -2973041409649255745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bajek_right_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 468fe355ba2cf9fc581c242bdbbc36d0
-      internalID: 6568048007243480551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bajek_right_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dafec3fab7ae78e97885b6a34d246492
-      internalID: -4956950873965411921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bajek_right_10
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d18f4166bb6a30c698b1f0aefe1abbb
-      internalID: -8711956192205773519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bajek_right_11
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6976e6afd1d295b3b8f88892b84ea3f
-      internalID: 5219905782751858422
+      spriteID: 2caf7cb21c20cf610beb391d718ce73a
+      internalID: 5008260189526368824
       vertices: []
       indices: 
       edges: []

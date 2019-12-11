@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,8 +139,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9258ad6bf7fe2f0999077ba82efd25e
+      spriteID: 2d528ede42979d40880d8d2e6797e673
       internalID: 187102920245414959
       vertices: []
       indices: 
@@ -158,10 +158,10 @@ TextureImporter:
       name: bajek_left_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,7 +169,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc7e3ac22bd7d2b0a139f1a9474fab2
+      spriteID: cfc040b91e65bd452a291a07980f0443
       internalID: -4489877602723987344
       vertices: []
       indices: 
@@ -179,10 +179,10 @@ TextureImporter:
       name: bajek_left_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +190,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97d6d4219daaf4e118ee1567d4a75972
+      spriteID: 119789f8d5a5a710298e63d754b91ce4
       internalID: 1294701224533105092
       vertices: []
       indices: 
@@ -200,10 +200,10 @@ TextureImporter:
       name: bajek_left_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,7 +211,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36dface510d80bd309b4e64c24605a84
+      spriteID: d733dd209c926a1d79b3c1b12c095495
       internalID: -1206974967282509973
       vertices: []
       indices: 
@@ -221,10 +221,10 @@ TextureImporter:
       name: bajek_left_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 256
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,7 +232,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dbcd81456e9ce8f3a8786e4ab0ff9e2
+      spriteID: c4608e2b9b990e251b6dcd8a8608a6dd
       internalID: 696726811611182472
       vertices: []
       indices: 
@@ -242,10 +242,10 @@ TextureImporter:
       name: bajek_left_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 320
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,7 +253,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fd63610d04c0ed92be144090663f814
+      spriteID: fe7224f2fee593977a26a173cedcafeb
       internalID: 8904411242541120763
       vertices: []
       indices: 
@@ -263,10 +263,10 @@ TextureImporter:
       name: bajek_left_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 384
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5fc99b5c88a2c0c8ad81c076a985c84
+      spriteID: 388f9b08d5004c338935f27dc7172dfb
       internalID: -8348352126167255215
       vertices: []
       indices: 
@@ -284,10 +284,10 @@ TextureImporter:
       name: bajek_left_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 448
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,7 +295,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdc53bddd2900e8049b62347d845ed01
+      spriteID: 5ebf0e0fc4bc533e1a5f92e49443c526
       internalID: -914343592175527795
       vertices: []
       indices: 
@@ -305,10 +305,10 @@ TextureImporter:
       name: bajek_left_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,7 +316,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de7acc758556d6f5aafc0e8b7ce987a5
+      spriteID: 434d495916206b8dba66539d8fff84a5
       internalID: -3919631375825806435
       vertices: []
       indices: 
@@ -326,10 +326,10 @@ TextureImporter:
       name: bajek_left_9
       rect:
         serializedVersion: 2
-        x: 288
+        x: 576
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,7 +337,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa9a9b860464acc5ca94fe2e01d7ffc7
+      spriteID: 1f5be4963b71381069b23f37feda95e6
       internalID: -2475064748617439407
       vertices: []
       indices: 
@@ -347,10 +347,10 @@ TextureImporter:
       name: bajek_left_10
       rect:
         serializedVersion: 2
-        x: 320
+        x: 640
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,7 +358,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdf7ea9dfead857d18f466f400ca6f8c
+      spriteID: 8ec74a27083c38b6dbcf0c18f3f05522
       internalID: -7547309051307868021
       vertices: []
       indices: 
@@ -368,10 +368,10 @@ TextureImporter:
       name: bajek_left_11
       rect:
         serializedVersion: 2
-        x: 352
+        x: 704
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,7 +379,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5a7c02615b529375ac01fe07173a137
+      spriteID: 1a477437a862da606b31a008fb8dcaa0
       internalID: -1117489342030523191
       vertices: []
       indices: 
