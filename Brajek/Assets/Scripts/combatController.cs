@@ -70,13 +70,13 @@ void Start() {
             attackCollider.transform.rotation = Quaternion.FromToRotation(Vector3.up, attackHitBoxDirection);
 
             movementController.isLocked = true;
-            movementController.direction /= 5; 
+            movementController.direction /= 5; //slow down na corrida quando for atacar
             
-            //animator.PlayTheAtackAnimationHere
             animator.SetFloat("X_mouseAxis", attackHitBoxDirection.x);
             animator.SetFloat("Y_mouseAxis", attackHitBoxDirection.y);
             animator.SetTrigger("attack");
             yield return new WaitForSeconds(attackDelay*2);
+            
             //faz pequeno deslize em direção ao ataque
             movementController.CurrentSpeed = 0.175f/attackDuration;
             movementController.direction = attackHitBoxDirection;
