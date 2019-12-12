@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6978381967224349618}
   - component: {fileID: 7916200163659051142}
   - component: {fileID: 4654850951373652514}
-  - component: {fileID: 5964982133099424414}
+  - component: {fileID: 7334985756523777861}
   - component: {fileID: 7482809669099393599}
   m_Layer: 0
   m_Name: Projectile
@@ -98,8 +98,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.08
---- !u!50 &5964982133099424414
+  m_Radius: 0.1
+--- !u!50 &7334985756523777861
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -107,11 +107,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8196956891601137967}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 1
+  m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -119,7 +119,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &7482809669099393599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,3 +132,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be3e7fe3dee29646b92fdb229682e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stunTime: 0.2
+  pushEnemyDuration: 0.3

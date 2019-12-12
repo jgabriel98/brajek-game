@@ -12,8 +12,6 @@ public class combatController : MonoBehaviour
     public GameObject primaryAttackPrefab;
     public GameObject secondaryAttackPrefab;
     private GameObject primaryAttack_obj;
-    private GameObject spriteRenderer;
-    private GameObject attackCollider;
 
     public float attackDelay = 0.09f;    //duração em segundos
     public float attackDuration = 0.2f;    //duração em segundos
@@ -31,8 +29,6 @@ void Start() {
     animator = GetComponent<Animator>();
     primaryAttack_obj = Instantiate(primaryAttackPrefab, gameObject.transform);
     primaryAttack_obj.SetActive(false);
-    spriteRenderer = primaryAttack_obj.transform.Find("AttackRenderer").gameObject;
-    attackCollider = primaryAttack_obj.transform.Find("AttackCollider").gameObject;
 }
 
     // Update is called once per frame
@@ -54,8 +50,7 @@ void Start() {
         //verifica se está atacando
         if (!primaryAttack_obj.active) {
             Debug.Log("ataque primário na direção " + direction.ToString());
-            Vector3 attackHitBoxDirection = direction.normalized;
-            Vector3 attackSpritePosition = getClosestPointFrom(attackHitBoxDirection, CartesianPoints2D);
+            Vector3 attackHitBoxDirection = direction.normalized/2;
             
             /*por enquanto a area de colisão do ataque fica junta do local/direção da animação do ataque
             porém o objetivo final é que a direção/posição do ataque seja contínuo.
@@ -63,11 +58,9 @@ void Start() {
             
             update: feito! - deixando comentário para entender melhor o que está acontecendo
             */
-
-            spriteRenderer.transform.localPosition = attackSpritePosition;
-            spriteRenderer.transform.rotation = Quaternion.FromToRotation(Vector3.up, attackSpritePosition);
-            attackCollider.transform.localPosition = attackHitBoxDirection;
-            attackCollider.transform.rotation = Quaternion.FromToRotation(Vector3.up, attackHitBoxDirection);
+            
+            primaryAttack_obj.transform.localPosition = attackHitBoxDirection;
+            primaryAttack_obj.transform.rotation = Quaternion.FromToRotation(Vector3.up, attackHitBoxDirection);
 
             movementController.isLocked = true;
             movementController.direction /= 5; //slow down na corrida quando for atacar

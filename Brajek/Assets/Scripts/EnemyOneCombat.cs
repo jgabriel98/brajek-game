@@ -42,20 +42,22 @@ namespace DefaultNamespace
 
         IEnumerator ExecuteAttack() {
             _isInCooldown = true;
+            
+            //faz avanço rapido no alvo
             _rigidbody2D.velocity = (target.transform.position - transform.position).normalized * attackSpeed;
             float sec = travelDistance / _rigidbody2D.velocity.magnitude;
-            
-            
             yield return new WaitForSeconds(sec);
+            
             _rigidbody2D.velocity = Vector2.zero;
+            StartCoroutine(_thisMovementController.StartmovementCoolDown(recoverTime));
             
-            _thisMovementController.setMovementLock(true);
-            yield return new WaitForSeconds(recoverTime);
-            _thisMovementController.setMovementLock(false);
-            
-            yield return new WaitForSeconds(coolDownTime);
+            yield return new WaitForSeconds(coolDownTime);    //inicia cooldown do ataque
 
             _isInCooldown = false;
+        }
+
+        public void OnTriggerEnter2D(Collider2D other) {
+            Debug.Log("colisor do inimigo foi ativado!");
         }
     }
 }
