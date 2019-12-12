@@ -41,10 +41,10 @@ namespace DefaultNamespace
         }
 
         IEnumerator ExecuteAttack() {
+            _isInCooldown = true;
             _rigidbody2D.velocity = (target.transform.position - transform.position).normalized * attackSpeed;
             float sec = travelDistance / _rigidbody2D.velocity.magnitude;
             
-            _isInCooldown = true;
             
             yield return new WaitForSeconds(sec);
             _rigidbody2D.velocity = Vector2.zero;
