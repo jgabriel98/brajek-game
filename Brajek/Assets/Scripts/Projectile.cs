@@ -31,9 +31,11 @@ public class Projectile : MonoBehaviour
         other.attachedRigidbody.velocity = vel;
 
         yield return pushEnemy(other.attachedRigidbody, enemy._movementController, vel, pushEnemyDuration);
-            
-        if(--enemy.Hp <= 0)
+
+        if (--enemy.Hp <= 0) {
             Destroy(enemy.gameObject);
+            yield break;
+        }
         
         yield return stunEnemy(other.attachedRigidbody, enemy._movementController, stunTime);
 

@@ -13,12 +13,22 @@ public class EnemyOneMovement : MonoBehaviour, EnemyMovementController
     
     private Rigidbody2D _rigidbody2D;
 
+    private Animator _animator;
     // deve ser setado para o objeto do player na Unity
     public GameObject target;
 
 
     public void Start() {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+    }
+
+    public void Update() {
+        if (!IsTimeToMove()) {
+            _animator.SetFloat("Magnitude", 0f);
+            _animator.SetFloat("X_axis", 0f);
+            _animator.SetFloat("Y_axis", 0f);
+        }
     }
 
 
@@ -43,7 +53,11 @@ public class EnemyOneMovement : MonoBehaviour, EnemyMovementController
 
     private void follow(Transform target) {
         Vector3 dir = target.transform.position - transform.position;
+        
+        _animator.SetFloat("Magnitude", dir.magnitude);
         dir.Normalize();
+        _animator.SetFloat("X_axis", dir.x);
+        _animator.SetFloat("Y_axis", dir.y);
 
         transform.position += dir * speed * Time.deltaTime;
     }
