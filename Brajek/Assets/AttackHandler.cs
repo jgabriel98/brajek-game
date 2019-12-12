@@ -22,10 +22,10 @@ public class AttackHandler : MonoBehaviour
         Enemy enemy = other.gameObject.GetComponent<Enemy>();
         if(enemy._combatController.isInvencible()) yield break;
         
-        //enemy._combatController.setInvencible(1);
+        enemy._combatController.setInvencible(1);
 
         var attachedRigidbody = other.attachedRigidbody;
-        Vector2 vel = (attackDirection).normalized * ((0.1f/attachedRigidbody.mass));
+        Vector2 vel = (attackDirection).normalized * ((0.5f/attachedRigidbody.mass));
         attachedRigidbody.velocity = vel;
 
         yield return pushEnemy(other.attachedRigidbody, enemy._movementController, vel, pushEnemyDuration);

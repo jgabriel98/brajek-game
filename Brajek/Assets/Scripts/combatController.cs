@@ -17,6 +17,7 @@ public class combatController : MonoBehaviour
     public float attackDuration = 0.2f;    //duração em segundos
     public float projectileSpeed = 15f;
     private MovementControler  movementController;
+private bool isShooting = false;
 
     private static readonly Vector3[] CartesianPoints2D = {
         new Vector3(1, 0, 0), new Vector3(-1,0, 0),
@@ -41,7 +42,7 @@ void Start() {
              StartCoroutine(atackPrimary(aimDirection));
         }
         if(Input.GetKeyDown(KeyCode.Mouse1)) {
-            attackSecondary(aimDirection);
+            StartCoroutine(attackSecondary(aimDirection));
         }
     }
 
@@ -84,13 +85,18 @@ void Start() {
             movementController.isLocked = false;
         }
     }
-    void attackSecondary(Vector3 direction) {
+    IEnumerator attackSecondary(Vector3 direction) {
         Debug.Log("ataque secundário na direção "+ direction.ToString());
-
+	if(isShooting){
+   	   yield return new WaitForSeconds(0f);
+	}
+	isShooting = true;
         GameObject tiro = Instantiate(secondaryAttackPrefab, transform.position, Quaternion.identity);
         
         tiro.transform.rotation = Quaternion.FromToRotation(Vector3.left, direction);
         tiro.GetComponent<Rigidbody2D>().velocity = direction.normalized * projectileSpeed;
+	yield return new WaitForSeconds(attackDuration*2);
+	isShooting = false;
     }
 
     Vector3 getClosestPointFrom(Vector3 pointFrom, Vector3[] pointsToLook) {
