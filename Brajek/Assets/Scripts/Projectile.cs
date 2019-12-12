@@ -26,10 +26,14 @@ public class Projectile : MonoBehaviour
 
     IEnumerator applyHitEffects(Collider2D other) {
         Enemy enemy = other.gameObject.GetComponent<Enemy>();
-            
+        if(enemy._combatController.isInvencible()) yield break;
+        
+        enemy._combatController.setInvencible(2);
+
         Vector2 vel = (_rigidbody.mass/other.attachedRigidbody.mass) * (_rigidbody.velocity +_rigidbody.velocity.normalized);
         other.attachedRigidbody.velocity = vel;
 
+        gameObject.SetActive(false);
         yield return pushEnemy(other.attachedRigidbody, enemy._movementController, vel, pushEnemyDuration);
 
         if (--enemy.Hp <= 0) {
@@ -38,7 +42,8 @@ public class Projectile : MonoBehaviour
         }
         
         yield return stunEnemy(other.attachedRigidbody, enemy._movementController, stunTime);
-
+        
+        Destroy(gameObject);
     }
 
     IEnumerator pushEnemy(Rigidbody2D body, EnemyMovementController controller, Vector2 velocity, float duration) {

@@ -73,8 +73,10 @@ void Start() {
             //faz pequeno deslize em direção ao ataque
             movementController.CurrentSpeed = 0.175f/attackDuration;
             movementController.direction = attackHitBoxDirection;
+            primaryAttack_obj.GetComponent<AttackHandler>().attackDirection = direction;
             primaryAttack_obj.SetActive(true);
-            
+
+
             yield return new WaitForSeconds(attackDuration);
             movementController.CurrentSpeed = movementController.defaultSpeed;
             
@@ -84,7 +86,10 @@ void Start() {
     }
     void attackSecondary(Vector3 direction) {
         Debug.Log("ataque secundário na direção "+ direction.ToString());
+
         GameObject tiro = Instantiate(secondaryAttackPrefab, transform.position, Quaternion.identity);
+        
+        tiro.transform.rotation = Quaternion.FromToRotation(Vector3.left, direction);
         tiro.GetComponent<Rigidbody2D>().velocity = direction.normalized * projectileSpeed;
     }
 

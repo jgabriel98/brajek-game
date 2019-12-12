@@ -136,3 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5f421ae265258b89efec02596b04c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stunTime: 0.3
+  pushEnemyDuration: 0.3
+  attackDirection: {x: 0, y: 0}
